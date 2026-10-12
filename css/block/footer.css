@@ -1,0 +1,355 @@
+
+.subscribe-section {
+  position: relative;
+  z-index: 10;
+  padding: 0;
+  margin: 0;
+}
+
+.subscribe-block {
+  transform: translateY(-50%);
+  
+  background-color: var(--main-color);
+  border-radius: 24px;
+  padding: 48px 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.subscribe-block__title {
+  font-family: var(--font-family);
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--white);
+  margin: 0;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  flex: 1;
+}
+
+.subscribe-block__form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 320px;
+  flex-shrink: 0;
+}
+
+.subscribe-block__input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.subscribe-block__icon {
+  position: absolute;
+  left: 16px;
+  color: #999;
+  pointer-events: none;
+}
+
+.subscribe-block__input {
+  width: 100%;
+  padding: 14px 16px 14px 44px;
+  border: none;
+  border-radius: 62px;
+  background-color: var(--white);
+  font-family: var(--second-family);
+  font-size: 14px;
+  color: var(--main-color);
+  outline: none;
+  box-sizing: border-box;
+}
+
+.subscribe-block__input::placeholder {
+  color: #999;
+}
+
+.subscribe-block__btn {
+  padding: 14px 24px;
+  background-color: var(--white);
+  color: var(--main-color);
+  font-family: var(--second-family);
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 62px;
+  cursor: pointer;
+  transition: all var(--time) ease;
+}
+
+.subscribe-block__btn:hover {
+  background-color: #f0f0f0;
+}
+
+.footer {
+  background-color: var(--fon2-color);
+  padding-bottom: 40px; 
+}
+
+.footer__main {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 48px;
+}
+
+.footer__brand {
+  max-width: 260px;
+  flex-shrink: 0;
+}
+
+.footer__logo {
+  font-family: var(--font-family);
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--main-color);
+  margin-bottom: 16px;
+  letter-spacing: -1px;
+}
+
+.footer__description {
+  font-family: var(--second-family);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--gray-text);
+  margin: 0 0 20px;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 12px;
+}
+
+.footer__social {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  border-radius: 50%;
+  color: var(--main-color);
+  transition: all var(--time) ease;
+  text-decoration: none;
+}
+
+.footer__social:hover {
+  background-color: var(--main-color);
+  color: var(--white);
+}
+
+.footer__links {
+  display: flex;
+  gap: 40px;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.footer__column {
+  min-width: 120px;
+}
+
+.footer__column-title {
+  font-family: var(--second-family);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--main-color);
+  margin: 0 0 16px;
+  letter-spacing: 1px;
+}
+
+.footer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__link {
+  font-family: var(--second-family);
+  font-size: 14px;
+  color: var(--gray-text);
+  text-decoration: none;
+  transition: color var(--time) ease;
+}
+
+.footer__link:hover {
+  color: var(--main-color);
+}
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  border-top: 1px solid #e0e0e0;
+  gap: 20px;
+}
+
+.footer__copyright {
+  font-family: var(--second-family);
+  font-size: 13px;
+  color: var(--gray-text);
+  margin: 0;
+}
+
+.footer__payments {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__payment {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  background-color: var(--white);
+  border-radius: 6px;
+  font-family: var(--second-family);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--main-color);
+  border: 1px solid #e0e0e0;
+  min-width: 50px;
+  height: 32px;
+}
+
+.footer__payment--mastercard {
+  position: relative;
+  background: transparent;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  min-width: auto;
+}
+
+.footer__payment-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.footer__payment-circle--red {
+  background-color: #eb001b;
+  margin-right: -8px;
+  z-index: 1;
+}
+
+.footer__payment-circle--orange {
+  background-color: #f79e1b;
+}
+
+.footer__payment--paypal {
+  color: #003087;
+  font-style: italic;
+}
+
+.footer__payment--apple {
+  font-size: 14px;
+}
+
+.footer__payment--google {
+  color: #4285f4;
+}
+
+/* ===== Планшет ===== */
+@media (max-width: 1024px) {
+  .subscribe-block {
+    padding: 36px 32px;
+    gap: 24px;
+  }
+
+  .subscribe-block__title {
+    font-size: 28px;
+  }
+
+  .subscribe-block__form {
+    min-width: 260px;
+  }
+
+  .footer {
+    padding-top: 48px;
+    padding-bottom: 32px;
+  }
+
+  .footer__links {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 900px) {
+  .subscribe-block {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px 24px;
+    gap: 24px;
+    border-radius: 20px;
+  }
+
+  .subscribe-block__title {
+    font-size: 22px;
+  }
+
+  .subscribe-block__form {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .footer {
+    padding-top: 32px;
+    padding-bottom: 24px;
+  }
+
+  .footer__main {
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+
+  .footer__brand {
+    max-width: 100%;
+  }
+
+  .footer__links {
+    flex-direction: column;
+    gap: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: flex-start;
+  }
+
+  .footer__column {
+    min-width: auto;
+  }
+
+  .footer__column-title {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+
+  .footer__link {
+    font-size: 13px;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding-top: 20px;
+  }
+
+  .footer__payments {
+    flex-wrap: wrap;
+  }
+}

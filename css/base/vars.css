@@ -1,0 +1,31 @@
+/* --- Переменные --- */
+:root {
+  --font-family: 'IntegralCF-ExtraBold', sans-serif;
+  --second-family: 'Satoshi', sans-serif;
+
+
+  --main-color: #000;
+  --bg-color: #f2f0f1; /* Ваш фон */
+  --fon2-color: #f0f0f0;
+  --white: #fff;
+  --gray-text: #999999;
+
+  --container-width: 1440px;
+  --container-padding: 100px; /* Для мобилок по умолчанию */
+
+  --time: 0.3s;
+}
+
+
+
+@media (max-width: 1024px) {
+  :root {
+    --container-padding: 40px; /* Планшет */
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --container-padding: 20px; /* Мобилки */
+  }
+}

@@ -1,0 +1,13 @@
+/* css base */
+@import url('./base/fonts.css');
+@import url('./base/globlas.css');
+@import url('./base/normalize.css');
+@import url('./base/vars.css');
+
+/* css block */
+@import url('./block/header.css');
+@import url('./block/hero.css');
+@import url('./block/products.css');
+@import url('./block/categories.css');
+@import url('./block/reviews.css');
+@import url('./block/footer.css');
