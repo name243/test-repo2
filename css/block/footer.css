@@ -88,6 +88,7 @@
 
 .footer {
   background-color: var(--fon2-color);
+  margin-top: -20px;
   padding-bottom: 40px; 
 }
 
@@ -279,7 +280,7 @@
   }
 
   .footer {
-    padding-top: 48px;
+    padding-top: 50px;
     padding-bottom: 32px;
   }
 
@@ -307,7 +308,7 @@
   }
 
   .footer {
-    padding-top: 32px;
+    margin-top: -60px;
     padding-bottom: 24px;
   }
 

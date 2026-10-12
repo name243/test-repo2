@@ -5,6 +5,8 @@
   overflow-x: hidden;
 }
 
+
+
 .reviews__header {
   display: flex;
   align-items: center;
@@ -182,7 +184,7 @@
 /* ===== Мобилки ===== */
 @media (max-width: 768px) {
   .reviews {
-    padding: 40px 0;
+    padding: 200px 0;
   }
 
   .reviews__header {
@@ -230,7 +232,7 @@
 /* ===== Мобилки ===== */
 @media (max-width: 768px) {
   .reviews {
-    padding: 40px 0;
+    padding: 100px 0;
   }
 
   .reviews__header {
@@ -266,7 +268,6 @@
     flex: 0 0 100%;
     width: 100%;
     max-width: 100%;
-    height: auto;
     min-height: 220px;
     padding: 20px;
   }
