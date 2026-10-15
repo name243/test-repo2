@@ -58,6 +58,22 @@
         </a>
 
         <nav class="header__nav" id="headerNav">
+          <button class="header__nav-close" id="closeNavBtn" aria-label="Закрыть меню">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 6L18 18M18 6L6 18"
+                stroke="#000"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
           <ul class="header__nav-list">
             <li class="header__nav-item header__nav-item--dropdown">
               <a href="#" class="header__nav-link">
@@ -801,46 +817,37 @@
     </section>
 
     <section class="categories">
-      <div class="container">
-        <div class="categories__wrapper">
-          <h2 class="categories__title">ВЫБЕРИ СВОЙ СТИЛЬ</h2>
+  <div class="container">
+    <div class="categories__wrapper">
+      <h2 class="categories__title">ВЫБЕРИ СВОЙ СТИЛЬ</h2>
 
-          <div class="categories__grid">
-            <a href="#" class="category-card category-card--small">
-              <img
-                src="./images/categories/casual.png"
-                alt="Свободный стиль"
-                class="category-card__image"
-              />
-            </a>
+      <div class="categories__grid">
+  <!-- Карточка 1 -->
+        <a href="#" class="category-card category-card--small">
+          <img src="./images/categories/casual.png" alt="Свободный стиль" class="category-card__image" />
+          <span class="category-card__text">Свободный</span>
+        </a>
 
-            <a href="#" class="category-card category-card--large">
-              <img
-                src="./images/categories/formal.png"
-                alt="Формальный стиль"
-                class="category-card__image"
-              />
-            </a>
+        <!-- Карточка 2 -->
+        <a href="#" class="category-card category-card--large">
+          <img src="./images/categories/formal.png" alt="Формальный стиль" class="category-card__image" />
+          <span class="category-card__text">Формальный</span>
+        </a>
 
-            <a href="#" class="category-card category-card--large">
-              <img
-                src="./images/categories/evening.png"
-                alt="Вечерний стиль"
-                class="category-card__image"
-              />
-            </a>
+        <!-- Карточка 3 -->
+        <a href="#" class="category-card category-card--large">
+          <img src="./images/categories/evening.png" alt="Вечерний стиль" class="category-card__image" />
+          <span class="category-card__text">Вечерний</span>
+        </a>
 
-            <a href="#" class="category-card category-card--small">
-              <img
-                src="./images/categories/sport.png"
-                alt="Спортивный стиль"
-                class="category-card__image"
-              />
-            </a>
-          </div>
-        </div>
+        <!-- Карточка 4 -->
+        <a href="#" class="category-card category-card--small">
+          <img src="./images/categories/sport.png" alt="Спортивный стиль" class="category-card__image" />
+          <span class="category-card__text">Спорт</span>
+        </a>
       </div>
-    </section>
+    </div>
+</section>
 
     <section class="reviews">
       <div class="container">

@@ -254,7 +254,6 @@
     margin-right: auto;
   }
 
-  
   .header__nav {
     position: fixed;
     top: 0;
@@ -266,12 +265,23 @@
     display: flex;
     flex-direction: column;
     padding: 80px 20px 20px;
+
     transform: translateX(-100%);
+    visibility: hidden;                    /* закрыто — не ловит клики */
+
+    /* 👇 transition на базовый класс — работает в обе стороны */
+    transition:
+      transform 0.35s ease,
+      visibility 0s linear 0.35s;         /* visibility прячется ПОСЛЕ анимации */
   }
 
   .header__nav--open {
     transform: translateX(0);
-    transition: transform var(--time) ease;
+    visibility: visible;                   /* открыто — ловит клики */
+
+    transition:
+      transform 0.35s ease,
+      visibility 0s linear 0s;             /* при открытии видно сразу */
   }
 
   .header__nav-list {
@@ -299,12 +309,44 @@
   .header__action-icon {
     width: 22px;
     height: 22px;
-    
   }
-
-  
 
   .header__actions {
     gap: 12px;
+  }
+
+  /* Крестик закрытия — только на мобилке */
+  .header__nav-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    z-index: 1;
+  }
+}
+
+.header__nav-close {
+  display: none;              /* на десктопе не показываем */
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {   /* твой брейкпоинт мобильной версии */
+  .header__nav-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;       /* позиционируется внутри открытого меню */
+    top: 16px;
+    right: 16px;
+    z-index: 1;
   }
 }

@@ -1,20 +1,32 @@
-export function initBurger() { 
+export function initBurger() {
+  const burgerBtn = document.getElementById('burgerBtn');
+  const headerNav = document.getElementById('headerNav');
+  const closeBtn = document.getElementById('closeNavBtn');
 
-    const burgerBtn = document.getElementById('burgerBtn');
-    const headerNav = document.getElementById('headerNav');
+  if (burgerBtn && headerNav) {
+    const closeMenu = () => {
+      headerNav.classList.remove('header__nav--open');
+      document.body.style.overflow = '';
+    };
 
-    if (burgerBtn && headerNav) {
+    const openMenu = () => {
+      headerNav.classList.add('header__nav--open');
+      document.body.style.overflow = 'hidden';
+    };
+
+    // бургер открывает/закрывает
     burgerBtn.addEventListener('click', () => {
-        headerNav.classList.toggle('header__nav--open');
-        document.body.style.overflow = headerNav.classList.contains('header__nav--open') ? 'hidden' : '';
+      headerNav.classList.contains('header__nav--open') ? closeMenu() : openMenu();
     });
 
-    headerNav.querySelectorAll('.header__nav-link').forEach(link => {
-        link.addEventListener('click', () => {
-        headerNav.classList.remove('header__nav--open');
-        document.body.style.overflow = '';
-        });
-    });
+    // крестик закрывает
+    if (closeBtn) {
+      closeBtn.addEventListener('click', closeMenu);
     }
 
+    // ссылки меню тоже закрывают его при клике
+    headerNav.querySelectorAll('.header__nav-link').forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+  }
 }
